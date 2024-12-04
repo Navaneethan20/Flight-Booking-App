@@ -1,0 +1,110 @@
+.why-book-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.why-book-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.why-book-content h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.feature-card {
+  background: rgb(237, 237, 237);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.icon-wrapper {
+  background-color: #f0f4f8;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  color: #2563eb;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  color: #1f2937;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.feature-card p {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.copyright {
+  text-align: center;
+  padding: 20px 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .why-book-content h2 {
+    font-size: 2rem;
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+
+  .icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
+}

@@ -1,0 +1,265 @@
+/* BookFlight.css */
+
+.BookFlightPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
+  
+  .BookingFlightPageContainer {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: black;
+  }
+  
+  .b-form {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-floating {
+    position: relative;
+  }
+  
+  .form-control {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .form-select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  label {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    transform: translateY(-50%);
+  }
+  
+  input[type="date"],
+  input[type="number"],
+  input[type="text"],
+  input[type="email"],
+  select {
+    font-size: 14px;
+  }
+  
+  .new-passengers {
+    margin-top: 20px;
+  }
+  
+  .new-passenger {
+    margin-bottom: 20px;
+  }
+  
+  .new-passenger h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .new-passenger-inputs .form-floating {
+    margin-bottom: 10px;
+  }
+  
+  .new-passenger-inputs input {
+    width: 100%;
+  }
+  
+  h6 {
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+  }
+ 
+  .total-price {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 15px;
+    color: black;
+
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:active {
+    background-color: #004085;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 12px;
+  }
+  
+  .span3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .BookingFlightPageContainer {
+      padding: 15px;
+    }
+  
+    .form-group {
+      gap: 10px;
+    }
+  
+    button {
+      padding: 12px;
+    }
+  }
+  
+  /* Error Message Styling */
+/* Error Message Styles */
+.error-message {
+    color: #f44336; /* Red color for error */
+    font-size: 0.875rem; /* Slightly smaller text */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #f44336;
+    border-radius: 5px;
+    background-color: #ffebee;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  /* Icon next to the error message */
+  .error-message::before {
+    content: "⚠️"; /* Warning icon */
+    margin-right: 8px;
+    font-size: 1.25rem;
+  }
+  
+  /* Smooth Fade-in Animation for Error Message */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Input fields with error */
+  input.is-invalid,
+  select.is-invalid {
+    border-color: #f44336;
+    background-color: #ffebee;
+  }
+  
+  /* Styling the input with error */
+  input.is-invalid:focus,
+  select.is-invalid:focus {
+    border-color: #f44336;
+    box-shadow: 0 0 5px rgba(244, 67, 54, 0.5);
+  }
+  
+  /* General Form Styles */
+  .form-floating input,
+  .form-floating select {
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+  }
+  
+  .form-floating input:focus,
+  .form-floating select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .form-floating label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: normal;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect for the form inputs */
+  .form-floating input:hover,
+  .form-floating select:hover {
+    border-color: #007bff;
+  }
+  
+  /* Success Message (Optional: In case you want to style success messages later) */
+  .success-message {
+    color: #4caf50;
+    font-size: 0.875rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+    background-color: #e8f5e9;
+  }
+  
+  .success-message::before {
+    content: "✔️";
+    margin-right: 8px;
+    font-size: 1.25rem;
+  }
+  

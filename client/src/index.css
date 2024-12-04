@@ -1,0 +1,75 @@
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* 1. Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Or any preferred font */
+  line-height: 1.6;
+  margin-top: -60px;
+  width: 100%;
+  height: 100%;
+}
+
+/* 2. Adjust for Navbar (if using fixed positioning) */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index:900;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 60px; /* Adjust this to match the height of your navbar */
+}
+
+/* 3. Fix unexpected spacing on containers */
+.container, .page-wrapper {
+  margin-top: 0;
+  padding-top: 0;
+  width: 100%;
+  max-width: 1200px; /* Adjust max-width as needed */
+  margin: 0 auto;
+}
+
+/* 4. Debugging Outline (optional for troubleshooting) */
+* {
+  outline: 0; /* Set to '1px solid red' temporarily for debugging */
+}
+
+/* 5. Ensure uniform spacing across all elements */
+.allFlightsPage, .flightAdmin-page {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px; /* Or any preferred width */
+}
+
+.notApproved-box, .admin-page-cards {
+  margin: 0;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px; /* Add padding for smaller screens */
+  }
+}

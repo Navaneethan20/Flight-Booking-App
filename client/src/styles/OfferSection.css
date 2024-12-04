@@ -1,0 +1,106 @@
+.offers-section {
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+  color: white;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.offers-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.offers-header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.header-left {
+  flex: 1;
+  min-width: 300px;
+  margin-bottom: 24px;
+}
+
+.header-left h1 {
+  font-size: 1.875rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #e5e5e5;
+}
+
+.highlight-bar {
+  height: 4px;
+  width: 80px;
+  background-color: #3b82f6;
+  border-radius: 4px;
+}
+
+.header-description {
+  flex: 1;
+  min-width: 300px;
+  line-height: 1.6;
+  color: #e5e5e5;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.offer-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+
+.offer-content {
+  padding: 24px;
+}
+
+.offer-content img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.offer-tag {
+  color: #3b82f6;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.offer-title {
+  color: #333;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.offer-description {
+  color: #666;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .offers-header {
+    flex-direction: column;
+  }
+
+  .header-left,
+  .header-description {
+    width: 100%;
+  }
+
+  .offers-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}

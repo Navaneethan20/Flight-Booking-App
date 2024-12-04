@@ -1,0 +1,138 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+:root {
+  --primary-blue: #3b82f6;
+  --white: #ffffff;
+  --black: #000000;
+  --border-radius-lg: 12px;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --font-family: 'Montserrat', sans-serif;
+  --background-color: #f0f0f0; /* Updated background color */
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+
+.bookings-page {
+  margin-top: 4rem; /* To avoid overlap with navbar */
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.bookings-page h1 {
+  color: var(--black);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.bookings-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ticket {
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ticket:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px var(--shadow-color);
+}
+
+.ticket-content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dashed var(--black);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cities {
+  color: #000000;
+  font-size: 2rem;
+  font-weight:1000;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+
+.flight-name {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.flight-no {
+  color: var(--black);
+  font-size: 1rem;
+}
+
+.ticket-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.detail-item {
+  text-align: left;
+}
+.detail-item label {
+  font-size: 0.875rem;
+  color: var(--black);
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  display: block;
+  text-align: left;
+}
+
+.detail-item p {
+  font-size: 1rem;
+  color: var(--primary-blue);
+}
+
+.cancel-button {
+  background: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius-lg);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  text-align: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.cancel-button:hover {
+  background:rgb(197, 49, 49);
+  transform: translateY(-2px);
+  
+}

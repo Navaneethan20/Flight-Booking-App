@@ -1,0 +1,117 @@
+/* Ensure body does not overlap with navbar */
+body {
+    padding-top: 60px;/* Add top padding to prevent content overlap with navbar */
+    
+  }
+  
+  /* FlightAdmin container */
+  .flightAdmin-page {
+    padding: 20px;
+    min-height: calc(100vh - 60px); /* Subtract navbar height from full screen height */
+    background-color: #f8f9fa;
+  }
+  
+  /* Adjust layout for specific sections */
+  .notApproved-box {
+    background-color: #ff4c4c;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px; /* Ensure margin on top to avoid overlap with navbar */
+  }
+  
+  /* Admin cards section */
+  .admin-page-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Card style */
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .admin-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+  }
+  
+  .admin-card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .admin-card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Adjust card background colors for variety */
+  .transactions-card {
+    background-color: #e3f2fd;
+  }
+  
+  .deposits-card {
+    background-color: #f1f8e9;
+  }
+  
+  .loans-card {
+    background-color: #fff3e0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .admin-page-cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .admin-page-cards {
+      grid-template-columns: 1fr;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  
+    .admin-card h4 {
+      font-size: 16px;
+    }
+  
+    .admin-card p {
+      font-size: 20px;
+    }
+  
+    .admin-card button {
+      padding: 8px 16px;
+    }
+  }
+  
